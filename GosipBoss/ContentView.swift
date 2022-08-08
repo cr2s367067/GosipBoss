@@ -17,7 +17,7 @@ struct ContentView: View {
                 ForEach(appVM.postSet) { post in
                     LazyVStack {
                         NavigationLink {
-                            
+                            PostingView(postedData: post)
                         } label: {
                             CustomUnit(
                                 title: post.title,
@@ -34,7 +34,7 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                     NavigationLink(isActive: $appVM.showPostingView) {
-                        
+                        UserPosting()
                     } label: {
                         Image(systemName: "plus.circle")
                             .foregroundColor(Color("buttonColor"))

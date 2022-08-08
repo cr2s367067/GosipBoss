@@ -12,13 +12,15 @@ struct PostingView: View {
     var postedData: PostDM
     
     var body: some View {
-        VStack {
-            Text(postedData.title)
-            HStack {
-                Spacer()
-                Text(postedData.postedDate?.dateValue() ?? Date(), format: Date.FormatStyle().year().month().day())
+        ScrollView(.vertical, showsIndicators: true) {
+            VStack(alignment: .leading, spacing: 10) {
+                Text(postedData.title)
+                HStack {
+                    Spacer()
+                    Text(postedData.postedDate?.dateValue() ?? Date(), format: Date.FormatStyle().year().month().day())
+                }
+                Text(postedData.texting)
             }
-            Text(postedData.texting)
         }
         .modifier(InitViewModifier())
     }

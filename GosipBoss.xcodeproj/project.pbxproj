@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E65A45128A0A4B20053A256 /* UserPosting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E65A45028A0A4B20053A256 /* UserPosting.swift */; };
 		0EAC65F7289EAFF0007AD0C3 /* GosipBossApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAC65F6289EAFF0007AD0C3 /* GosipBossApp.swift */; };
 		0EAC65F9289EAFF0007AD0C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAC65F8289EAFF0007AD0C3 /* ContentView.swift */; };
 		0EAC65FB289EAFF3007AD0C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EAC65FA289EAFF3007AD0C3 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E65A45028A0A4B20053A256 /* UserPosting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPosting.swift; sourceTree = "<group>"; };
 		0EAC65F3289EAFF0007AD0C3 /* GosipBoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GosipBoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EAC65F6289EAFF0007AD0C3 /* GosipBossApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GosipBossApp.swift; sourceTree = "<group>"; };
 		0EAC65F8289EAFF0007AD0C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				0EAC65F6289EAFF0007AD0C3 /* GosipBossApp.swift */,
 				0EAC65F8289EAFF0007AD0C3 /* ContentView.swift */,
+				0E65A45028A0A4B20053A256 /* UserPosting.swift */,
 				0EAC6613289F4122007AD0C3 /* PostingView.swift */,
 				0EAC6604289EB02D007AD0C3 /* AppViewModel.swift */,
 				0EAC6606289EBBCF007AD0C3 /* DataModel.swift */,
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EAC65F9289EAFF0007AD0C3 /* ContentView.swift in Sources */,
+				0E65A45128A0A4B20053A256 /* UserPosting.swift in Sources */,
 				0EAC6607289EBBCF007AD0C3 /* DataModel.swift in Sources */,
 				0EAC65F7289EAFF0007AD0C3 /* GosipBossApp.swift in Sources */,
 				0EAC6614289F4122007AD0C3 /* PostingView.swift in Sources */,

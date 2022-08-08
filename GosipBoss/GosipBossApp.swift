@@ -13,10 +13,13 @@ struct GosipBossApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
+    @StateObject var appVM = AppViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {            
                 ContentView()
+                    .environmentObject(appVM)
             }
         }
     }

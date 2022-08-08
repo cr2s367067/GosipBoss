@@ -17,5 +17,5 @@ struct PostDM: Codable, Identifiable {
 }
 
 extension PostDM {
-    static let empty = PostDM(title: "", texting: "")
+    static let empty = PostDM(title: "Testing Title", texting: "Testing Text")
 }
