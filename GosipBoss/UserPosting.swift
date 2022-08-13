@@ -55,12 +55,12 @@ struct UserPosting: View {
     }
 }
 
-struct UserPosting_Previews: PreviewProvider {
-    static var previews: some View {
-        
-        let appVM = AppViewModel()
-        
-        UserPosting()
-            .environmentObject(appVM)
-    }
-}
+//struct UserPosting_Previews: PreviewProvider {
+//    static var previews: some View {
+//        
+//        let appVM = AppViewModel()
+//        
+//        UserPosting()
+//            .environmentObject(appVM)
+//    }
+//}

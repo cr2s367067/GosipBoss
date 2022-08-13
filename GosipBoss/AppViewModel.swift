@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import FirebaseFirestore
 import FirebaseFirestoreSwift
+import FirebaseAuth
 
 class AppViewModel: ObservableObject {
     
@@ -20,7 +21,13 @@ class AppViewModel: ObservableObject {
     
     @Published var showPostingView = false
     
+    let auth = Auth.auth()
     let db = Firestore.firestore()
+    
+    // MARK: - Sing in with Anonymous
+    func accessAsAnonymous() async throws {
+        try await auth.signInAnonymously()
+    }
     
     func posting(user posting: PostDM) async throws {
         let postRef = db.collection("Posts")
@@ -47,6 +54,8 @@ class AppViewModel: ObservableObject {
             return nil
         }
     }
+    
+    
 }
 
 
